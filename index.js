@@ -14,13 +14,13 @@ const upload = require("./routes/upload");
 const Grid = require("gridfs-stream");
 
 const PORT = process.env.PORT || 5000;
-// const corsOptions = {
-//     origin: "http://localhost:3000"
-// };
+const corsOptions = {
+    origin: "https://sahilasthana-blog.netlify.app"
+};
 
 let gfs;
 
-//app.use(cors(corsOptions));
+app.use(cors(corsOptions));
 app.use(cookieParser());
 app.use(express.json());
 
