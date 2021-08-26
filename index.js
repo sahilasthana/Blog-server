@@ -15,7 +15,7 @@ const Grid = require("gridfs-stream");
 
 const PORT = process.env.PORT || 5000;
 const corsOptions = {
-    origin: "https://sahilasthana-blog.netlify.app"
+    origin: "https://myblog-sahilasthana.netlify.app"
 };
 
 let gfs;
